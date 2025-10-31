@@ -1,0 +1,28 @@
+@'
+# KiCad backups & temporaries
+*.bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*-backups/
+*.kicad_prl
+*.tmp
+*.zip
+*.tar.gz
+__pycache__/
+
+# Simulator / Cache
+*.cache
+*.net
+*.xml
+
+# Plot-/Output-Ordner (wenn generiert)
+fabrication/
+outputs/
+plots/
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+
+# Git LFS wird separat via .gitattributes gesetzt (siehe Schritt 5)
+'@ | Out-File -Encoding UTF8 .gitignore
