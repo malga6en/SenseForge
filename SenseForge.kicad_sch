@@ -3102,6 +3102,24 @@
 				(hide yes)
 			)
 		)
+		(property "Website" "https://jlcpcb.com/partdetail/18102-0805W8F1002T5E/C17414"
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C17414"
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "72466605-2dd4-4ba7-9fd2-913ffa4f0107")
 		)
@@ -3637,6 +3655,24 @@
 				(hide yes)
 			)
 		)
+		(property "Website" "https://jlcpcb.com/partdetail/18102-0805W8F1002T5E/C17414"
+			(at 133.35 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C17414"
+			(at 133.35 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "96317c25-a6af-4e44-9e62-f34d5657d120")
 		)
@@ -3782,6 +3818,24 @@
 				(hide yes)
 			)
 		)
+		(property "Website" "https://jlcpcb.com/partdetail/18201-0805W8F1001T5E/C17513"
+			(at 85.09 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C17513"
+			(at 85.09 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4528503b-ac4f-4185-96d4-fb407085f06f")
 		)
@@ -3910,6 +3964,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 68.58 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Website" "https://jlcpcb.com/partdetail/18201-0805W8F1001T5E/C17513"
+			(at 68.58 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C17513"
 			(at 68.58 86.36 0)
 			(effects
 				(font
