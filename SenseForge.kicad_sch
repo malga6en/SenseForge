@@ -996,22 +996,24 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW1"
-				(at 0 10.16 0)
+				(at -1.2701 6.35 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "SW_MEC_5E"
-				(at 0 7.62 0)
+			(property "Value" "custom_button"
+				(at 1.2699 6.35 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+			(property "Footprint" "_myLibrary:button_push_sms"
 				(at 0 7.62 0)
 				(effects
 					(font
@@ -1127,24 +1129,6 @@
 						(type none)
 					)
 				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
 			(symbol "SW_MEC_5E_1_1"
 				(pin passive line
@@ -1166,9 +1150,9 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at 5.08 0 180)
 					(length 2.54)
-					(name "A"
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1184,16 +1168,34 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 2.54 0)
 					(length 2.54)
-					(name "K"
+					(name "3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2671,7 +2673,7 @@
 		)
 		(uuid "fed89563-0645-46e6-817e-c41d6c367d23")
 	)
-	(text "Note: \ncustom_push footprint not correct!"
+	(text "Note: \n\n"
 		(exclude_from_sim no)
 		(at 14.986 17.018 0)
 		(effects
@@ -2999,7 +3001,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+		(property "Footprint" "_myLibrary:button_push_sms"
 			(at 91.44 88.9 0)
 			(effects
 				(font
@@ -3008,7 +3010,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
+		(property "Datasheet" "https://asset.conrad.com/media10/add/160267/c1/-/gl/000183373DS01/datenblatt-183373-mentor-12541004-12541004-drucktaster-12-v-dcac-005-a-1-x-ausein-tastend-1-st.pdf"
 			(at 91.44 88.9 0)
 			(effects
 				(font
@@ -3017,8 +3019,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MEC 5E single pole normally-open tactile switch"
+		(property "Description" "https://www.conrad.at/de/p/mentor-1254-1004-1254-1004-drucktaster-12-v-dc-ac-0-05-a-1-x-aus-ein-tastend-1-st-183373.html"
 			(at 83.82 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://asset.conrad.com/media10/add/160267/c1/-/gl/000183373DS01/datenblatt-183373-mentor-12541004-12541004-drucktaster-12-v-dcac-005-a-1-x-ausein-tastend-1-st.pdf"
+			(at 83.82 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3032,10 +3043,10 @@
 		(pin "1"
 			(uuid "04b2838a-5904-4b34-8a0a-0bbd2addf5cf")
 		)
-		(pin "1"
+		(pin "3"
 			(uuid "68327ab0-360c-4502-b3ce-5366e8e9f6e8")
 		)
-		(pin "2"
+		(pin "4"
 			(uuid "bb85d60d-1f3f-4100-95db-fea6e4b7db10")
 		)
 		(instances
