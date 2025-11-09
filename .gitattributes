@@ -1,0 +1,64 @@
+# ============================================================
+# SenseForge Project .gitattributes
+# Normalized line endings, KiCad compatibility, Git LFS setup
+# ============================================================
+
+# Default: auto-normalize line endings for text files
+* text=auto eol=lf
+
+# ======================
+# KiCad (v6–v8)
+# ======================
+
+# Always treat KiCad files as text with LF endings
+*.kicad_pro  text eol=lf
+*.kicad_sch  text eol=lf
+*.kicad_pcb  text eol=lf
+*.kicad_sym  text eol=lf
+*.kicad_mod  text eol=lf
+*.kicad_wks  text eol=lf
+
+# Cache and backup files are ignored by .gitignore but handled safely if added
+fp-info-cache text eol=lf
+
+# ======================
+# Documentation & Markdown
+# ======================
+*.md    text eol=lf
+*.txt   text eol=lf
+*.csv   text eol=lf
+*.json  text eol=lf
+*.xml   text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.py    text eol=lf
+*.c     text eol=lf
+*.cpp   text eol=lf
+*.h     text eol=lf
+*.ino   text eol=lf
+
+# ======================
+# OS / Binary / Misc
+# ======================
+*.jpg   binary
+*.jpeg  binary
+*.png   binary
+*.gif   binary
+*.bmp   binary
+*.ico   binary
+*.pdf   binary
+*.zip   binary
+*.tar   binary
+*.gz    binary
+
+# ======================
+# Git LFS (large binary files)
+# ======================
+# Use LFS for large 3D and CAD files
+*.step filter=lfs diff=lfs merge=lfs -text
+*.stp  filter=lfs diff=lfs merge=lfs -text
+*.stl  filter=lfs diff=lfs merge=lfs -text
+*.3mf  filter=lfs diff=lfs merge=lfs -text
+*.iges filter=lfs diff=lfs merge=lfs -text
+*.igs  filter=lfs diff=lfs merge=lfs -text
+*.obj  filter=lfs diff=lfs merge=lfs -text
