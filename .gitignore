@@ -1,28 +1,113 @@
-@'
-# KiCad backups & temporaries
+# ============================================================
+# SenseForge Project .gitignore
+# Compatible with KiCad v6–v8, Windows, and OneDrive setups
+# ============================================================
+
+# ======================
+# KiCad project files
+# ======================
+
+# Backup- und temporäre Dateien
 *.bak
-*.kicad_sch-bak
-*.kicad_pcb-bak
 *-backups/
 *.kicad_prl
 *.tmp
 *.zip
 *.tar.gz
-__pycache__/
+*.kicad_sch-bak
+*.kicad_pcb-bak
 
-# Simulator / Cache
+# Lokaler Cache (nicht versionsrelevant)
+fp-info-cache
+
+# Automatisch erzeugte Cache-/Netz-/XML-Dateien
 *.cache
 *.net
 *.xml
 
-# Plot-/Output-Ordner (wenn generiert)
+# Output-/Fabrication-/Plot-Ordner (wenn generiert)
 fabrication/
 outputs/
 plots/
+gerbers/
+bom/
+pickplace/
+exports/
+reports/
 
-# IDE / OS
+# ======================
+# Firmware & Code
+# ======================
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Arduino / PlatformIO / ESP32 / STM32 temporäre Dateien
+*.elf
+*.bin
+*.hex
+*.map
+*.dmp
+.build/
+.pio/
+.vscode/
+.idea/
+*.obj
+*.o
+*.lst
+
+# CMake / Make
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ======================
+# Dokumentation
+# ======================
+
+# Office / PDF temporäre Dateien
+~$*
+*.tmp
+*.log
+*.aux
+*.out
+*.toc
+
+# Export- oder Vorschau-Ordner
+__MACOSX/
+*.bak~
+*.tmp/
+temp/
+backup/
+cache/
+
+# ======================
+# OS & Cloud sync artefacts
+# ======================
+
+# Windows / macOS
 .DS_Store
 Thumbs.db
+desktop.ini
+ehthumbs.db
+Icon?
+*.lnk
 
-# Git LFS wird separat via .gitattributes gesetzt (siehe Schritt 5)
-'@ | Out-File -Encoding UTF8 .gitignore
+# OneDrive
+~*.tmp
+*.onecache
+*.one
+*.tmp_drivedownload
+
+# ======================
+# Git LFS Hinweise
+# ======================
+# Große Binärdateien (STEP/STL/3D etc.) über Git LFS handhaben.
+# Beispiel:
+#   git lfs track "*.step"
+#   git lfs track "*.stl"
+#   git lfs track "*.3mf"
+#   git lfs track "*.stp"
